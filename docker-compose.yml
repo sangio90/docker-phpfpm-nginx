@@ -1,0 +1,6 @@
+web:
+  image: nginx-test
+  ports:
+  - "80:80"
+  volumes:
+  - ./dev-app:/app
