@@ -11,3 +11,5 @@ docker build -t php-test .
 Per testare nginx spostarsi nella root e lanciare
 
 docker run --rm -it --name nginx-test -v (pwd)/dev-app:/app:rw nginx-test
+
+Per eseguire il compose di phpfpm7 + nginx nella root lanciare docker-compose up -d

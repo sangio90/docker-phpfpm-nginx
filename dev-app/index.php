@@ -6,6 +6,7 @@
 </head>
 <body>
     <h1>Funziona!
+        <?= ' anche il PHP!' ?>
     </h1>
 </body>
 </html>

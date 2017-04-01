@@ -1,14 +1,21 @@
-webapp:
-#  build: ./nginx
-  image: nginx-test
-  ports:
-  - "80:80"
-  links:
-  - phpfpm:phpfpm
-  volumes_from:
-  - phpfpm
-phpfpm:
-#  build: ./php7fpm
-  image: php-test
-  volumes:
-  - ./dev-app:/app
+version: "2"
+
+services:
+  webapp:
+  #  build: ./nginx
+    image: nginx-test
+    ports:
+    - "80:80"
+    volumes:
+    - ./dev-app:/app
+    networks:
+    - code-network
+  php:
+      image: php:7-fpm
+      volumes:
+      - ./dev-app:/app
+      networks:
+          - code-network
+networks:
+    code-network:
+        driver: bridge
