@@ -1,6 +1,14 @@
-web:
+webapp:
+#  build: ./nginx
   image: nginx-test
   ports:
   - "80:80"
+  links:
+  - phpfpm:phpfpm
+  volumes_from:
+  - phpfpm
+phpfpm:
+#  build: ./php7fpm
+  image: php-test
   volumes:
   - ./dev-app:/app

@@ -5,6 +5,7 @@
     <title>Prova Docker NGINX</title>
 </head>
 <body>
-    <h1>Funziona!</h1>
+    <h1>Funziona!
+    </h1>
 </body>
 </html>
