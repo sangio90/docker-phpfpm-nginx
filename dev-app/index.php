@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Prova Docker NGINX</title>
+    <title>Nginx + PHP Docker Test</title>
 </head>
 <body>
-    <h1>Funziona!
-        <?= ' anche il PHP!' ?>
-    </h1>
+    <h1>It Works</h1>
+    <p><?= ' PHP is working fine as well!' ?></p>
 </body>
 </html>
