@@ -2,8 +2,8 @@ version: "2"
 
 services:
   webapp:
-  #  build: ./nginx
-    image: nginx-test
+    build: ./nginx
+#    image: nginx-test
     ports:
     - "80:80"
     volumes:
