@@ -1,4 +1,4 @@
-##How to run this project
+##Docker PHPFPM + Nginx
 
 Install docker and docker-compose.
 
