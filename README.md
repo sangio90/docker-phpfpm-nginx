@@ -1,4 +1,4 @@
-##Docker PHPFPM + Nginx
+## Docker PHPFPM + Nginx
 
 Install docker and docker-compose.
 
